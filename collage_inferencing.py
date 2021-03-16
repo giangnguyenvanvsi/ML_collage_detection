@@ -23,7 +23,7 @@ filter3 = np.array([[0, 0, 0, 0, 0],
 # ========================================================
 
 input_shape = (224, 224, 3)
-weights_path = 'pretrained-model/CollageDetectionModelWeights.h5'
+WEIGHTS_PATH = 'CollageDetectionModelWeights.h5'
 id2label = {0: "single", 1: "collage"}
 
 def srm_filter(img_path, target_size=(224, 224)):
@@ -38,8 +38,14 @@ def srm_filter(img_path, target_size=(224, 224)):
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
-    ap.add_argument("-i", "--image", required=True, help="Path to the image")
+    ap.add_argument("-i", "--input", required=True, help="Path to the image")
+    ap.add_argument("-c", "--checkpoint", required=False, help="Path to the pre-trained model")
     args = vars(ap.parse_args())
+
+    if 'checkpoint' not in args:
+        weights_path = WEIGHTS_PATH
+    else:
+        weights_path = args['checkpoint']
 
     # reload pre-trained model
     model = keras.Sequential(
