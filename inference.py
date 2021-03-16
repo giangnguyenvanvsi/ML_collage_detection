@@ -11,7 +11,7 @@ id2label = {0: "NON-COLLAGE", 1: "COLLAGE"}
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument("-i", "--image", required=True, help="Path to the image")
-    ap.add_argument("-c", "--checkpoint", default= 'pretrained-model/CollageDetectionModelWeights.h5',required=False, help="Path to the image")
+    ap.add_argument("-c", "--checkpoint", default='pretrained-model/CollageDetectionModelWeights.h5',required=False, help="Path to the image")
 
     args = vars(ap.parse_args())
     weights_path = args['checkpoint']
