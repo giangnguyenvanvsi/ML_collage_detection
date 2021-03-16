@@ -8,7 +8,7 @@ As rS engineering effort owner, I want to have an intelligent agent/service whic
 
 Some examples of collage image from RewardStyle data
 
-![single photo](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00a3ce1a-7458-11eb-8026-0242ac110004.jpg)|![collage image](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00ae3c69-747a-11eb-8026-0242ac110004.jpg)
+![single photo](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00a3ce1a-7458-11eb-8026-0242ac110004_resized.jpg)|![collage image](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00ae3c69-747a-11eb-8026-0242ac110004_resized.jpg)
 
 ## 2. Solution
 In the quick insight, in early work, the most commonly collage detection methods are classical computer vision. They use simple predetermined features that make them often depend on a handcrafted thresholds as parameters. They are unlearnable so not good for general dataset from RS.
