@@ -8,14 +8,14 @@ As rS engineering effort owner, I want to have an intelligent agent/service whic
 
 Some examples of collage image from RewardStyle data
 
-![collage_image_1](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00b1b6c3-7454-11eb-853c-0242ac110004_resized.jpg)![collage image_2](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00ae3c69-747a-11eb-8026-0242ac110004_resized.jpg)![collage_image_3](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00c4d6b1-6fb2-11eb-a608-0242ac110004_resized.jpg)
+![collage image_2](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00ae3c69-747a-11eb-8026-0242ac110004_resized.jpg)![collage_image_3](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00c4d6b1-6fb2-11eb-a608-0242ac110004_resized.jpg)
 
 ## 2. Solution
 In the quick insight, in early work, the most commonly collage detection methods are classical computer vision. They use simple predetermined features that make them often depend on a handcrafted thresholds as parameters. They are unlearnable so not good for general dataset from RS.
 
 Otherwise, the collage detection is very similar to splicing detection is one of the most importance problems in manipulation detection. Recently, there are several CNN-based learning techniques that can solve this similar problems effectively. 
 
-In this repo, we implement a modified approach based on paper "`Learning Rich Features for Image Manipulation Detection`". Our approach classifies an image upload from user is collage image or not. In our approach, there is only one noise stream that leverages the noise features extracted from a SRM (steganalysis rich model) filter layer to discover the noise in-consistency between authentic and tampered regions. The features is feed and learnt by the Convolution Neural Network to get predict results.
+In this repo, we implement a modified approach based on paper "`Learning Rich Features for Image Manipulation Detection`". Our approach classifies an image upload from user is collage image or not. In our approach, there is only one noise stream that leverages the noise features extracted from a SRM (steganalysis rich model) filter layer to discover the noise in-consistency between authentic and tampered regions. The features is feed and learnt by the Convolution Neural Network to get predict results. In this paper, it is clear that the result filtered emphasize the local noise instead of image content and explicitly reveal tampering artifacts that might not be visible in the normal RGB channels.
 
 
 
