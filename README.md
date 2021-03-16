@@ -3,12 +3,12 @@ The `collage_detection` is an Artifical Intelligent Project which is deveploped 
 
 # II. Problems & Solution
 
-## 1. Requirement from RS Team
+## 1. Problems
 As rS engineering effort owner, I want to have an intelligent agent/service which can perform collage detection and properly mark/tag the input object (eg: picture) when the collage is detected (ask Google for more)
 
 Some examples of collage image from RewardStyle data
 
-![single photo](https://drive.google.com/file/d/1scYbd5x6PBmubqQYKxbQYMG0gCXfNW5w/view?usp=sharing)|![collage image](https://drive.google.com/file/d/1vVIqPJxQOMEJTDF4MvGWYkgWg55me8hH/view?usp=sharing)
+![single photo](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00a3ce1a-7458-11eb-8026-0242ac110004.jpg)|![collage image](https://github.com/giangnguyenvanvsi/ML_collage_detection/blob/main/examples/00ae3c69-747a-11eb-8026-0242ac110004.jpg)
 
 ## 2. Solution
 In the quick insight, in early work, the most commonly collage detection methods are classical computer vision. They use simple predetermined features that make them often depend on a handcrafted thresholds as parameters. They are unlearnable so not good for general dataset from RS.
