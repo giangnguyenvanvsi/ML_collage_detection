@@ -42,9 +42,9 @@ python train.py --dataset path_to_training_data_folder
 ### 2.2. Test
 
 ```
-python inference.py --input path_to_input_image
+python inference.py --input path_to_input_image --checkpoint path_to_input_image
 ```
-
+In there, `--checkpoint` is option if you have a pretrained model.
 ### 2.3. Evaluate 
 About `data`, we use the common data from RS in the training process. The data includes 300 images and splited to training data and validation data with rate 0.9:0.1. Our approach also archived the accuracy 96.6% in this data. 
 
