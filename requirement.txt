@@ -2,6 +2,7 @@ tensorflow
 keras
 pillow
 opencv-python
+numpy
 
 
 
