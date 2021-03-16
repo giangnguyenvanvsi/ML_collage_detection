@@ -42,7 +42,7 @@ python train.py --dataset path_to_training_data_folder
 ### 2.2. Test
 
 ```
-python inference.py --input path_to_input_image --checkpoint path_to_input_image
+python inference.py -i path_to_input_image -c path_to_input_image
 ```
 In there, `--checkpoint` is option if you have a pretrained model.
 ### 2.3. Evaluate 
